@@ -1,0 +1,5 @@
+ .firebase/{
+  "projects": {
+    "default": "spacex-cfdbe"
+  }
+}

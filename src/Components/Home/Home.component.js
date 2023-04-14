@@ -3,6 +3,8 @@ import ElonMusk from "../../Shared/ElonMusk.webp";
 import "./Home.style.scss";
 
 const Home = (props) => {
+  const { companyData = {} } = props;
+
   const renderImage = () => {
     return (
       <div className="Image-Wrapper">
@@ -12,8 +14,6 @@ const Home = (props) => {
   };
 
   const companyDetails = () => {
-    const { companyData = {} } = props;
-
     return (
       <div className="Company-Details">
         <div className="Details-Key">
@@ -53,12 +53,14 @@ const Home = (props) => {
   return (
     <>
       <HeaderContainer />
-      <div className="Home-Container">
-        <div className="Home-Wrapper">
-          {renderImage()}
-          {companyDetails()}
+      {Object.keys(companyData).length > 0 && (
+        <div className="Home-Container">
+          <div className="Home-Wrapper">
+            {renderImage()}
+            {companyDetails()}
+          </div>
         </div>
-      </div>
+      )}
     </>
   );
 };
