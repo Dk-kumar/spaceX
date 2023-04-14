@@ -53,7 +53,7 @@ const Home = (props) => {
   return (
     <>
       <HeaderContainer />
-      {Object.keys(companyData).length > 0 && (
+      {companyData !== null && Object.values(companyData).length > 0 && (
         <div className="Home-Container">
           <div className="Home-Wrapper">
             {renderImage()}
