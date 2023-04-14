@@ -1,0 +1,68 @@
+@import "../../Styles/__media.scss";
+
+.Header-Container {
+  display: flex;
+  align-items: center;
+  margin: 1rem 4rem;
+  justify-content: space-between;
+  @include mobile {
+    margin: 1.2rem;
+  }
+
+  .Logo-Container {
+    text-decoration: none;
+    .Logo {
+      width: 400px;
+
+      @include mobile {
+        display: none;
+        width: unset;
+      }
+    }
+
+    .Home-Text {
+      color: #fff;
+      text-decoration: none;
+      font-size: 1.3rem;
+      letter-spacing: 2px;
+      text-transform: capitalize;
+      font-weight: 600;
+
+      @include mobile {
+        font-size: 15px;
+      }
+
+      @include after-mobile {
+        display: none;
+      }
+    }
+  }
+
+  .Nav {
+    display: flex;
+    gap: 3rem;
+
+    @include mobile {
+      gap: 1rem;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .link {
+      color: #fff;
+      text-decoration: none;
+      font-size: 1.3rem;
+      letter-spacing: 2px;
+      text-transform: capitalize;
+      font-weight: 600;
+
+      @include mobile {
+        font-size: 15px;
+      }
+    }
+
+    .Active {
+      border-bottom: 1px solid;
+    }
+  }
+}

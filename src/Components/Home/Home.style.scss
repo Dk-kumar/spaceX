@@ -1,0 +1,49 @@
+@import "../../Styles/__media.scss";
+
+
+.Home-Container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 9rem;
+
+  @include mobile {
+    margin-top: 2rem;
+  }
+
+  .Home-Wrapper {
+    background: #434242;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+
+    @include mobile {
+      background: unset;
+      display: unset;
+    }
+
+    .Image-Wrapper {
+      img {
+        max-width: 600px;
+        height: 100%;
+
+        @include mobile {
+          max-width: 100%;
+        }
+      }
+    }
+
+    .Company-Details {
+      padding-right: 5rem;
+      color: #fff;
+
+      a {
+        color: rgb(79, 79, 216);
+      }
+
+      @include mobile {
+        padding: 0 1rem;
+      }
+    }
+  }
+}

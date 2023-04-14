@@ -1,0 +1,144 @@
+@import "../../Styles/__media.scss";
+
+.Details-Wrapper {
+  max-width: 1200px;
+  margin: 5rem auto 0;
+  background: #434242;
+  padding: 2rem;
+  border-radius: 5px;
+
+  @include mobile {
+    margin: 1rem auto 0;
+    background: unset;
+  }
+  .Launch-Card {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    color: #fff;
+    column-gap: 3rem;
+
+    @include mobile {
+      width: unset;
+      max-width: 100%;
+      display: unset;
+    }
+
+    .Left-Side {
+      .Image-Wrapper {
+        img {
+          width: 550px;
+          @include mobile {
+            width: unset;
+            max-width: 100%;
+          }
+        }
+      }
+    }
+
+    .Right-Side {
+      .Name {
+        font-size: 36px;
+      }
+
+      .About-Launches {
+        display: flex;
+        gap: 14px;
+        align-items: center;
+        .Success {
+          color: rgb(18, 175, 18);
+          font-size: 20px;
+        }
+
+        .Faliure {
+          color: rgb(224, 22, 22);
+          font-size: 20px;
+        }
+      }
+
+      .Details {
+        line-height: 22px;
+      }
+
+      .Artical-Wrapper {
+        display: flex;
+        gap: 14px;
+
+        a {
+          color: #fff;
+          text-decoration: none;
+          border: 1px solid;
+          padding: 10px 16px;
+          border-radius: 6px;
+        }
+      }
+    }
+  }
+
+  .Rocket-Card {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    color: #fff;
+    column-gap: 3rem;
+
+    @include mobile {
+      display: unset;
+    }
+
+    @include mobile {
+      width: unset;
+      max-width: 100%;
+    }
+
+    .Left-Side {
+      .Image-Wrapper {
+        img {
+          width: 550px;
+
+          @include mobile {
+            width: unset;
+            max-width: 100%;
+          }
+        }
+      }
+    }
+
+    .Right-Side {
+      .Name {
+        font-size: 36px;
+      }
+
+      .About-Launches {
+        display: flex;
+        gap: 14px;
+        align-items: center;
+        .Success {
+          color: rgb(18, 175, 18);
+          font-size: 20px;
+        }
+
+        .Faliure {
+          color: rgb(224, 22, 22);
+          font-size: 20px;
+        }
+      }
+
+      .Details {
+        line-height: 22px;
+      }
+
+      .Artical-Wrapper {
+        margin-top: 2rem;
+
+        a {
+          color: #fff;
+          text-decoration: none;
+          border: 1px solid;
+          padding: 10px 16px;
+          border-radius: 6px;
+        }
+      }
+    }
+  }
+}
